@@ -6,10 +6,13 @@ public class DeckOfCards {
 	public static void main(String[] args) {
 		Displaycards rv1 = new Displaycards();
 		rv1.displaycards();
-		players rv2 = new players();
+		Players rv2 = new Players();
 		rv2.numOfPlayer();
+		CardSequence rv3 = new CardSequence();
+		rv3.playerCardSequence();
 	}
 }
+// Initialize the deck
 class Displaycards {
 	void displaycards() {
 	int[] deck = new int[52];
@@ -26,8 +29,8 @@ class Displaycards {
     }
     }
 }
-
-class players {
+//Get players from user
+class Players {
 	public void numOfPlayer(){
         Scanner userinput = new Scanner(System.in);
         System.out.println("Enter number of players");
@@ -38,4 +41,14 @@ class players {
         else
             System.out.println("Number of players = " +players);
     }
+}
+
+class CardSequence {
+	public void playerCardSequence () {
+		int i,j = 1;
+		int player = 2;
+			for (i = 1; i <= player; i++) {
+	            System.out.println("Card" + j++ + " received by player" + i);
+	        }
+	}
 }

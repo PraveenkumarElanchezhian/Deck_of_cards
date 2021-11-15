@@ -39,6 +39,10 @@ class Displaycards {
 			deck[r] = deck[i];
 			deck[i] = temp;
 		}
+// print shuffled deck
+		for (int i = 0; i < n; i++) {
+			System.out.println(deck[i]);
+		}
 	}
 }
 
@@ -62,6 +66,7 @@ class CardSequence {
 		int player = 4;
 		for (i = 1; i <= player; i++) {
 			System.out.println("Card" + j++ + " received by player" + i);
+			System.out.println();
 		}
 	}
 }
